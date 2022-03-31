@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Add Edit Remove HTML Table Row</title>
-    <meta charset="windows-1252" />
+    <title>Employee Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
@@ -20,7 +19,7 @@
         transition: all 0.25s ease-in-out;
       }
       tr:hover {
-        background-color: #eee;
+        background-color: rgb(155, 147, 147);
         cursor: pointer;
       }
     </style>
@@ -33,23 +32,16 @@
           <tr>
             <th>Name</th>
             <th>Address</th>
-            <th>EmpId</th>
-            <th>Desg</th>
+            <th>Emp Id</th>
+            <th>Designation</th>
           </tr>
         </table>
       </div>
       <div class="tab tab-2">
-        Name :<input type="text" name="fname" id="fname" /> Address :<input
-          type="text"
-          name="address"
-          id="address"
-        />
-        EmpId :<input type="text" name="empid" id="empid" /> Designation :<input
-          type="text"
-          name="desg"
-          id="desg"
-        />
-
+        Name :<input type="text" name="fname" id="fname" /> 
+        Address :<input type="text" name="address" id="address"/>
+        EmpId :<input type="text" name="empid" id="empid" />
+        Designation :<input type="text" name="desg" id="desg"/>
         <button onclick="addHtmlTableRow();">Add</button>
         <button onclick="editHtmlTbleSelectedRow();">Update</button>
       </div>

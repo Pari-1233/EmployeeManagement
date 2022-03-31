@@ -1,5 +1,6 @@
 var rIndex,
-  table = document.getElementById("table"); // check the empty input
+table = document.getElementById("table"); 
+// check the empty input
 
 function checkEmptyInput() {
   var isEmpty = false,
@@ -8,6 +9,7 @@ function checkEmptyInput() {
     empid = document.getElementById("empid").value;
   desg = document.getElementById("desg").value;
 
+  //validations
   if (fname === "") {
     alert("First Name Connot Be Empty");
     isEmpty = true;
@@ -23,6 +25,7 @@ function checkEmptyInput() {
   }
   return isEmpty;
 }
+//empty array to store data
 var empArr = [];
 // add Row
 function addHtmlTableRow() {
@@ -97,6 +100,7 @@ function editHtmlTbleSelectedRow() {
     address = document.getElementById("address").value,
     empid = document.getElementById("empid").value;
   desg = document.getElementById("desg").value;
+  
   if (!checkEmptyInput()) {
     table.rows[rIndex].cells[0].innerHTML = fname;
     table.rows[rIndex].cells[1].innerHTML = address;
